@@ -2,8 +2,8 @@ name: Run shell Commands
 on: [push]
 
 jobs:
-  run-shell-commands:
+  run-shell-command:
     runs-on: ubuntu-latest
     steps:
       -name: Echo a String
-       run: echo "Hello Security guru, this is our first github command"
+       run: echo "Hello Security guru!! this is our first github command"
