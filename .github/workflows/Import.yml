@@ -3,9 +3,9 @@ name: Import to Higher environment
 on: 
   workflow_dispatch: 
   push:
-    brach: [ main ]
+    branches: [ main ]
   pull_request: 
-    branch: [ main ]
+    branches: [ main ]
     
 jobs:
   import-to-qa:
