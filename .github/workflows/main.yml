@@ -5,7 +5,7 @@ on:
   push: 
     branches: [ main ]
   pull_request:
-    branches" [ main ]
+    branches: [ main ]
  
 jobs:
   export-from-dev:
@@ -18,12 +18,12 @@ jobs:
       with:
         lfs: true
         
-    -name: who-am-i action
-     uses: microsoft/powerplatform-actions/who-am-i@v0
-     with:
-       Environment-url: 'https://org0643ab2c.crm8.dynamics.com/'
-       user-name: 'SanjeevaReddyKummita@TheEVCompany.onmicrosoft.com'
-       password-secret: ${{ secrets.password }}
+    - name: who-am-i action
+      uses: microsoft/powerplatform-actions/who-am-i@v0
+      with:
+        Environment-url: 'https://org0643ab2c.crm8.dynamics.com/'
+        user-name: 'SanjeevaReddyKummita@TheEVCompany.onmicrosoft.com'
+        password-secret: ${{ secrets.password }}
        
     - name: export-solution action
       uses: microsoft/powerplatform-actions/export-solution@v0
@@ -58,5 +58,3 @@ jobs:
         solution-target-folder: solutions/ALMLab
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         allow-empty-commit: true    
-        
-        
