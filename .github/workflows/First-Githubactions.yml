@@ -5,5 +5,5 @@ jobs:
   run-shell-command:
     runs-on: ubuntu-latest
     steps:
-      -name: Echo a String
-       run: echo "Hello Security guru!! this is our first github command"
+      - name: Echo a String
+        run: echo "Hello Security guru!! this is our first github command"
